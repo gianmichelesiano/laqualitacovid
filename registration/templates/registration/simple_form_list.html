@@ -1,0 +1,17 @@
+{% extends 'registration/base.html' %}
+
+{% block content %}
+    {% for registration in registrations %}
+        <div>
+            <h2><a href="">{{ post.title }}</a></h2>
+            <p>created_date: {{ registration.created_date }}</p>
+            <p>Vorname: {{ registration.Vorname }}</p>
+            <p>Familienname: {{ registration.Familienname }}</p>
+            <h2>Telefonnummer: {{ registration.Telefonnummer }}</h2>
+            <h2><a href="">{{ registration.Vorname }}</a></h2>
+
+        </div>
+    {% endfor %}
+{% endblock %}
+
+
